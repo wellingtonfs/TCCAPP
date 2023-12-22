@@ -4,6 +4,7 @@ import { SafeAreaView, StatusBar } from 'react-native';
 import { Colors } from './src/utils/colors.js';
 
 import Home from './src/screens/home.js';
+import ModalLLM from './src/screens/llm.js';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         backgroundColor={Colors.background}
       />
 
-      <Home/>
+      {/* <Home/> */}
+
+      <ModalLLM visible={true} closeModal={() => {}}/>
 
     </SafeAreaView>
   );
